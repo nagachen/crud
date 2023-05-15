@@ -67,7 +67,7 @@ foreach($rows as $row){
             <td><?=$row['dept'];?></td>
             <td><?=$row['graduate_at'];?></td>
             <td><?=$row['status_code'];?></td>
-            <td><a href="">編輯</td>
+            <td><a href="edit_form.php?id=<?=$row['id'];?>">編輯</td>
             <td><a href="del.php?id=<?=$row['id'];?>">刪除</td>
         </tr>
 <?php
