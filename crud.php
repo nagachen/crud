@@ -46,6 +46,8 @@ $rows=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC); //陣列式拿取
             <td>科別</td>
             <td>畢業國中</td>
             <td>畢業狀態</td>
+            <td>編輯</td>
+            <td>刪除</td>
         </tr>
 
 <?php
@@ -63,6 +65,8 @@ foreach($rows as $row){
             <td><?=$row['dept'];?></td>
             <td><?=$row['graduate_at'];?></td>
             <td><?=$row['status_code'];?></td>
+            <td><a href="">編輯</td>
+            <td><a href="del.php?id=<?=$row['id'];?>">刪除</td>
         </tr>
 <?php
 }
