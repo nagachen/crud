@@ -33,6 +33,8 @@ $rows=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC); //陣列式拿取
     </style>
 </head>
 <body>
+    <h1>學生列表</h1>
+    <a href="insert_form.php" class="btn">新增學生資料</a>
     <table>
         <tr>
             <td>id</td>
